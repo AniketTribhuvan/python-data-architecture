@@ -20,12 +20,19 @@ These concepts form the foundation of efficient data manipulation and scientific
 - boolean masking
 - fancy indexing
 - views vs. copies
+- reshaping (`reshape`)
+- transposing
+- broadcasting
 
 ## Skills Developed
 
 - Creating and working with NumPy arrays
 - Understanding how arrays are stored in memory
 - Optimizing memory usage using appropriate dtypes
+- Selecting and filtering data without loops
+- Reshaping and transforming arrays efficiently
+- Distinguishing between views and copies
+- Applying broadcasting for efficient computations
 
 ## Key Takeaways
 
@@ -33,6 +40,7 @@ These concepts form the foundation of efficient data manipulation and scientific
 - Understanding memory layout helps write more optimized code.
 - Choosing the correct dtype can significantly reduce memory usage.
 - Views avoid unnecessary memory copies, while copies create new data.
+- Broadcasting allows operations on arrays with different shapes without writing loops.
 
 ## 🗂️ Project Structure
 
@@ -44,6 +52,8 @@ These concepts form the foundation of efficient data manipulation and scientific
   01_ndarray_basics.md                          # Creating ndarrays, dtypes, shape, size, and memory layout
   02_dtype_and_memory.md                        # Dtype casting, contiguity, and memory optimization
   03_indexing_and_slicing.md                    # Indexing, slicing, boolean masking, and fancy indexing
+  04_array_manipulation.py                      # Reshaping, transposing, views, and copies
+  05_broadcasting.py                            # Broadcasting rules and shape compatibility
 ```
 
 **Note** : Before executing any example from .md file. Always write following in code at first line :
