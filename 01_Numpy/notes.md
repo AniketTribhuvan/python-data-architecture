@@ -561,3 +561,87 @@ Output:
 ```
 
 The original array remains unchanged.
+
+---
+
+# Reshaping (`reshape`)
+
+`reshape()` changes the dimensions without changing the data.
+
+Example:
+
+```python
+import numpy as np
+
+arr = np.arange(9)
+
+matrix = arr.reshape(3, 3)
+
+print(matrix)
+```
+
+Output:
+
+```python
+[[0 1 2]
+ [3 4 5]
+ [6 7 8]]
+```
+
+---
+
+# Transposing
+
+Transposing swaps rows and columns.
+
+Example:
+
+```python
+import numpy as np
+
+arr = np.array([
+    [1, 2],
+    [3, 4]
+])
+
+print(arr.T)
+```
+
+Output:
+
+```python
+[[1 3]
+ [2 4]]
+```
+
+---
+
+# Broadcasting
+
+## What is Broadcasting?
+
+Broadcasting allows NumPy to perform operations on arrays with different shapes without copying data.
+
+Example:
+
+```python
+import numpy as np
+
+matrix = np.array([
+    [1, 2, 3],
+    [4, 5, 6]
+])
+
+vector = np.array([10, 20, 30])
+
+print(matrix + vector)
+```
+
+Output:
+
+```python
+[[11 22 33]
+ [14 25 36]]
+```
+
+NumPy automatically stretches the smaller array.
