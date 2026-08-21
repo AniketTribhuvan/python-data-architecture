@@ -645,3 +645,103 @@ Output:
 ```
 
 NumPy automatically stretches the smaller array.
+
+---
+
+# Matrix Multiplication (`@`)
+
+The `@` operator performs matrix multiplication.
+
+Example:
+
+```python
+import numpy as np
+
+A = np.array([[1, 2],
+              [3, 4]])
+
+B = np.array([[5, 6],
+              [7, 8]])
+
+print(A @ B)
+```
+
+---
+
+# Dot Product (`np.dot`)
+
+`np.dot()` calculates the dot product.
+
+Example:
+
+```python
+import numpy as np
+
+a = np.array([1, 2, 3])
+
+b = np.array([4, 5, 6])
+
+print(np.dot(a, b))
+```
+
+Output:
+
+```python
+32
+```
+
+---
+
+# Axis-wise Aggregations
+
+NumPy can calculate statistics across specific axes.
+
+Example:
+
+```python
+import numpy as np
+
+arr = np.array([
+    [1, 2, 3],
+    [4, 5, 6]
+])
+
+print(arr.sum(axis=0))
+print(arr.sum(axis=1))
+```
+
+Output:
+
+```python
+[5 7 9]
+
+[6 15]
+```
+
+---
+
+# Vectorized Operations
+
+Vectorization means performing operations on the entire array at once instead of writing Python loops.
+
+Example:
+
+```python
+import numpy as np
+
+arr = np.array([1, 2, 3])
+
+print(arr * 10)
+```
+
+Output:
+
+```python
+[10 20 30]
+```
+
+Vectorized code is:
+
+- Faster
+- Cleaner
+- More memory-efficient
